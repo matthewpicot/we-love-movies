@@ -53,4 +53,5 @@ async function readReviews(req, res) {
 module.exports = {
 	delete: [asyncErrorBoundary(validateReviewId), destroy],
 	update: [asyncErrorBoundary(validateReviewId), update],
+	readReviews,
 };
